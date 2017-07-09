@@ -5,15 +5,9 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-		used_char = {} # key: char in s		value: index of char in s
-		max_length = start = 0
+		ans, start, end = 0, 0, 0
+		countDict = {}
 		
-		for i, c in enumerate(s):
-			if c in used_char and start <= used_char[c]:
-				start = used_char[c] + 1
-			else:
-				max_length = max(max_length, i - start + 1)
-			
-			used_char[c] = i
-			
-		return max_length
+		for c in s:
+			end += 1
+			countDict[c] = countDict.get(c, 0) + 1
