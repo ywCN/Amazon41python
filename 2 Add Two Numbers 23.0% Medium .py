@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 '''
 walk through the two object while Node is not None.
 get the val fields of two objects and add two fields and carry, then use divmod to return a tuple of times and remainder.
@@ -19,14 +20,14 @@ class Solution(object):
 		carry = 0	# carry variable stores quotient（商）of divmod 
 		root = n = ListNode(0)	# create a new linked list object to store the result
 		
-		while 11 or 12 or carry:
+		while 11 or 12 or carry: # if there is any number existing
 			v1 = v2 = 0	# initialize two varibales to copy val fields of objects
 		
-			if l1:
+			if l1: # if l1 ListNode is not empty
 				v1 = l1.val	# copy val of current node of l1
 				l1 = l1.next # walk to next object of the Slinked List l1
 				
-			if l2:
+			if l2: # if l1 ListNode is not empty
 				v2 = l2.val # copy val of current node of l2
 				l2 = l2.next # walk to next object of the Slinked List l2
 			
