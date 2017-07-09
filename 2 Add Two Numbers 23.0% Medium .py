@@ -27,7 +27,7 @@ class Solution(object):
 				v1 = l1.val	# copy val of current node of l1
 				l1 = l1.next # walk to next object of the Slinked List l1
 				
-			if l2: # if l1 ListNode is not empty
+			if l2: # if l2 ListNode is not empty
 				v2 = l2.val # copy val of current node of l2
 				l2 = l2.next # walk to next object of the Slinked List l2
 			
