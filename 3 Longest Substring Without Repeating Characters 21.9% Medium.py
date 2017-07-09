@@ -24,7 +24,7 @@ class Solution(object):
 			end += 1
 			countDict[c] = countDict.get(c, 0) + 1
 			while countDict[c] > 1: 
-			# decrease the value in the dict begins from s[start] and increase start by 1 until the value of s[start] is not bigger than 1
+			# decrease the value in the dict begins from s[start] and increase start by 1 until the value of countDict[c] is not bigger than 1
 				countDict[s[start]] -= 1
 				start += 1
 
