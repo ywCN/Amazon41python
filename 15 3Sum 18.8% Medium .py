@@ -1,3 +1,12 @@
+#  Since it's 3 sum, there's only going to be 3 numbers
+#  Iterate through the list with the first pointer, and then trying to find two extra numbers to sum to 0.
+#  Since the list is ordered, the right pointer will always be higher than the left pointer.
+
+#  So if the sum is too large, you can move the right pointer back one.
+#  On the other hand, if the sum is too small (below 0), then move the left pointer up one.
+
+#  Source: https://discuss.leetcode.com/topic/22619/python-easy-to-understand-solution-o-n-n-time/23
+
 def threeSum(nums):
     """
     type nums: List[int]
@@ -12,8 +21,8 @@ def threeSum(nums):
         if i > 0 and nums[i] == nums[i - 1]:  # because the answers should be unique
             continue
 
-        l = i + 1
-        r = len(nums) - 1
+        l = i + 1  # left pointer
+        r = len(nums) - 1  # right pointer
 
         while r > l:
             s = nums[i] + nums[l] + nums[r]
@@ -31,8 +40,3 @@ def threeSum(nums):
                 r -= 1
 
     return result
-
-
-
-x = threeSum([-1, 0, 1, 2, -1, -4])
-print(x)
