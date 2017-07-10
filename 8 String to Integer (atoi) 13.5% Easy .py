@@ -42,15 +42,17 @@ def myAtoi(s):
         else:
             break
 
-        if len(tmp) > len(MAX_INT) - 1:
-            result = int(tmp)
+    if len(tmp) > 1:
+        result = int(tmp)
 
-        if result > MAX_INT:
-            return MAX_INT
+    if result > MAX_INT:
+        return MAX_INT
 
-        elif result < MIN_INT:
-            return MIN_INT
+    elif result < MIN_INT:
+        return MIN_INT
 
-        else:
-            return result
+    else:
+        return result
 
+
+print(myAtoi('+'))
