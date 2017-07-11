@@ -34,7 +34,7 @@ class Solution():
 
             tmp = tmp.next  # go to next node
 
-        if l1 != None:  # rest of the nodes must be in only one linked list, so just copy the nodes
+        if l1 != None:  # rest of the nodes must be in only one linked list, so just copy the head node of the list (just refer tmp.next to the current head node of the leftover list)
             tmp.next = l1
         else:
             tmp.next = l2
