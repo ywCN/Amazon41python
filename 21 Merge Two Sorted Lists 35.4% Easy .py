@@ -1,4 +1,4 @@
-# assuming the both linked list are from smaller to bigger
+#  both linked list are sorted
 class ListNode():
     def __init__(self, x):
         self.val = x
