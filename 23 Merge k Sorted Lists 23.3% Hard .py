@@ -30,9 +30,8 @@ class ListNode:
             return "{} -> {}".format(self.val, self.next)
 
 
+        
 import heapq
-
-
 class Solution:
     def mergeKLists(self, lists):
         dummy = ListNode(0)
