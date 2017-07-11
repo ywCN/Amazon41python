@@ -1,4 +1,4 @@
-# Compare the values of both lists until one list is empty, 
+# Compare the values of both lists until one list is empty,  
 # then move the rest of the nodes from the other list to merged list
 
 
