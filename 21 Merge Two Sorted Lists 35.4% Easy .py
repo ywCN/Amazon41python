@@ -1,18 +1,19 @@
+# Compare the values of both lists until one list is empty, 
+# then move the rest of the nodes from the other list to merged list
+
+
 #  both linked list are sorted
+"""
 class ListNode():
     def __init__(self, x):
         self.val = x
         self.next = None
-
-
-"""
-    def __str__(self):
-        return str(self.val)
 """
 
 
 class Solution():
     def mergeTwoLists(self, l1, l2):
+
         """
         :type l1: ListNode
         :type l2: ListNode
