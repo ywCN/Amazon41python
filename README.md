@@ -4,7 +4,7 @@ Questions to memorize: 21 23 48
 # Amazon41python
 This repository contains the LC questions frequently asked by Amazon.
 
-
+In-place means that you should update the original string rather than creating a new one.
 
 
 ret = res = result
